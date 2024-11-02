@@ -25,3 +25,34 @@ const AttributeBinding = {
 }
 Vue.createApp(AttributeBinding).mount('#bind-attribute')
 
+
+//директиву v-on
+const EventHandling = {
+  data() {
+    return {
+      message: 'Привет, Vue.js!'
+    }
+  },
+  methods: {
+    reverseMessage() {
+      this.message = this.message
+        .split('')
+        .reverse()
+        .join('')
+    }
+  }
+}
+
+Vue.createApp(EventHandling).mount('#event-handling')
+
+
+//директиву v-model
+const TwoWayBinding = {
+  data() {
+    return {
+      message: 'Привет, Vue!'
+    }
+  }
+}
+
+Vue.createApp(TwoWayBinding).mount('#two-way-binding')
