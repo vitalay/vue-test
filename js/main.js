@@ -56,3 +56,30 @@ const TwoWayBinding = {
 }
 
 Vue.createApp(TwoWayBinding).mount('#two-way-binding')
+
+//дириктива v-if
+
+const ConditionalRendering = {
+  data() {
+    return {
+      seen: true
+    }
+  }
+}
+
+Vue.createApp(ConditionalRendering).mount('#conditional-rendering')
+  
+  //дириктива v-for
+
+  const listRendering ={
+data() {
+  return{
+    todos: [
+      { text: 'Я учу JavaScript', level: '6' },
+      { text: 'Я учу Vue', level: '2' },
+      { text: 'Я учу Frontend', level: '5' }
+    ]
+  }
+}
+  }
+  Vue.createApp(listRendering).mount('#list-rendering')
