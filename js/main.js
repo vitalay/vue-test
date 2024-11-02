@@ -83,6 +83,7 @@ data() {
   }
 }
   }
+
   Vue.createApp(listRendering).mount('#list-rendering')
 
   //Компоненты
@@ -110,3 +111,6 @@ data() {
   const app = Vue.createApp(TodoList)
   //Монтируем приложение Vue
   app.mount('#todo-list-app')
+
+  Vue.createApp(listRendering).mount('#list-rendering')
+
