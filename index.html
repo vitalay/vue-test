@@ -16,6 +16,19 @@
       Наведи 
     </span>
   </div>
+  <!--директива v-on-->
+  
+  <div id="event-handling">
+    <p>{{ message }}</p>
+    <button v-on:click="reverseMessage">Перевернуть сообщение</button>
+  </div>
+
+  <!--Деректива v-model-->
+  
+  <div id="two-way-binding">
+    <p>{{ message }}</p>
+    <input v-model="message" />
+  </div>
 
 <!--<script src="https://unpkg.com/vue@next"></script>-->
     <script src="js/vue.global.js"></script>
