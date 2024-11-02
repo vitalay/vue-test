@@ -77,7 +77,8 @@ data() {
     todos: [
       { text: 'Я учу JavaScript', level: '6' },
       { text: 'Я учу Vue', level: '2' },
-      { text: 'Я учу Frontend', level: '5' }
+      { text: 'Я учу Frontend', level: '5' },
+      { text: 'Я учу Git', level: '3' }
     ]
   }
 }
