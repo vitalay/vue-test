@@ -84,3 +84,29 @@ data() {
 }
   }
   Vue.createApp(listRendering).mount('#list-rendering')
+
+  //Компоненты
+  const TodoItem = {
+    props: ['todo'],
+    template: `<li>{{ todo.text }}</li>`
+  }
+  const TodoList = {
+    data() {
+      return {
+        groceryList: [
+          { text: 'Овощи'},
+          { text: 'Сыр'},
+          { text: 'Мясо'},
+          { text: 'Фрукты'},
+          { text: 'Что еще люди должны есть'}
+        ]
+      }
+    },
+    components: {
+      TodoItem //Регестрируем новый компонент
+    }
+  }
+  //Создаем Vue приложение
+  const app = Vue.createApp(TodoList)
+  //Монтируем приложение Vue
+  app.mount('#todo-list-app')
